@@ -1,0 +1,282 @@
+.Navbar {
+  height: 60px;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.e-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.Login,
+.Newaccount {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Login:hover,
+.Newaccount:hover {
+  background-color: #cc0000;
+}
+
+.Newaccount {
+  border: 1px solid white;
+}
+
+.Navbar .e-circle.transparent {
+  opacity: 0;
+  cursor: default;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: red;
+}
+
+.Navbar.transparent,
+.Login.transparent,
+.Newaccount.transparent {
+  background-color: transparent;
+}
+
+.Login.transparent:hover,
+.Newaccount.transparent:hover {
+  background-color: #cc0000;
+}
+
+.Menu {
+  display: flex;
+}
+
+.Menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 388px) and (min-width: 150px) {
+  .Menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .Menu-icon {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .Menu-icon.active+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.ProfilePicture {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.ProfilePicture:hover {
+  border: 2px solid darkgray;
+}
+
+.userName {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 11px;
+  margin-right: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.signOut {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signOut:hover {
+  background-color: #cc0000;
+}
+
+.ReactModal__Content input[type="text"],
+.ReactModal__Content input[type="email"],
+.ReactModal__Content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ReactModal__Content input[type="text"]:focus,
+.ReactModal__Content input[type="email"]:focus,
+.ReactModal__Content input[type="password"]:focus {
+  outline: none;
+  border: 2px solid #0069d9;
+}
+
+.ReactModal__Content input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.ReactModal__Content label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ReactModal__Content h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.ReactModal__Content input[type="text"]:focus,
+.ReactModal__Content input[type="email"]:focus,
+.ReactModal__Content input[type="password"]:focus {
+  outline: none;
+  border: 2px solid #0069d9;
+}
+
+.ReactModal__Content label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ReactModal__Content h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.ReactModal__Content #closeButton {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 0.5;
+  font-size: medium;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  padding: 10px;
+  font-size: 1.5em;
+  color: darkslategrey;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.ReactModal__Content #closeButton:hover {
+  background-color: rgba(255, 0, 0, 0.815);
+  color: whitesmoke;
+}
+
+.ReactModal__Content .buttonAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ReactModal__Content .logInBtnStyle,
+.cancelBtnStyle {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.ReactModal__Content .logInBtnStyle:hover {
+  background-color: #0069d9;
+}
+
+.ReactModal__Content .cancelBtnStyle {
+  background-color: #6c757d;
+}
+
+.ReactModal__Content .cancelBtnStyle:hover {
+  background-color: #5a6268;
+}
+
+.ReactModal__Content .ProceedButton {
+  background-color: transparent;
+  color: #55b242;
+  border: 2px solid #55b242;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.ReactModal__Content .ProceedButton:hover {
+  background-color: #55b242;
+  color: white;
+
+}
+
+.ReactModal__Content .buttonContainer .CancelButton {
+  background-color: transparent;
+  color: #DB4437;
+  border: 2px solid #DB4437;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.ReactModal__Content .buttonContainer .CancelButton:hover {
+  background-color: #DB4437;
+  color: white;
+}
+
+#parent {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#parent::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}

@@ -1,0 +1,179 @@
+.bgimg {
+    background-image: url(../../../public/Assets/Home/food.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .circle {
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 45px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* --> */.display-5 {
+    font-size: 6rem;
+  }
+
+  .text-white {
+    color: #fff !important;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .dd-sb {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+
+
+.search-bar {
+  position: relative;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control {
+  flex-grow: 1;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.input-group-append button {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ced4da;
+  border-top: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+ .search-results{
+  color: white;
+ }
+
+
+ /*  */
+
+
+
+input {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.suggestions-container {
+  position: relative;
+}
+
+.suggestions , .no-suggestions{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  list-style-type: none;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.no-suggestions{
+  color: red;
+}
+
+.suggestions li, .no-suggestions {
+  border: 1px solid #ddd;
+  border-top: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.suggestions li:hover {
+  background-color:rgba(255, 0, 0, 0.39);
+}
+
+.suggestions li.selected {
+  background-color: rgba(255, 0, 0, 0.39);
+}
+/* ----------------------------------- */
+
+.suggestion-word {
+  display: inline-block;
+  padding: 3px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.suggestion-word:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.first-word{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: midnightblue;
+
+}
+
+.second-word ,.third-word {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  color: darkslategrey;
+  font-weight: lighter;
+}
+
+
+
+
+
+

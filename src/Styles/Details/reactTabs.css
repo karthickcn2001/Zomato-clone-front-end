@@ -1,0 +1,24 @@
+.react-tabs__tab--selected {
+    color: rgba(255, 0, 0, 0.76);
+
+}
+
+
+.react-tabs__tab--selected::after {
+    background-color: rgba(255, 0, 0, 0.76);
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight:bold;
+    font-style: normal;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: lighter;
+    color: dimgray;
+}

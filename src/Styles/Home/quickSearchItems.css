@@ -1,0 +1,88 @@
+
+ .card-img-left {
+width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title{
+  transition: all 0.3s ease-in-out;
+}
+
+.card-title:hover{
+  text-decoration: underline;
+}
+.card{
+  transition: transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 2px rgba(7, 0, 0, 0.3);
+
+}
+.card-1{
+  border: 2px solid orchid; 
+}
+.card-1:hover{
+  background-color: orchid;
+}
+
+.card-2{
+  border: 2px solid skyblue;
+}
+.card-2:hover{
+  background-color: skyblue;
+}
+.card-3{
+  border: 2px solid  peru;
+}
+.card-3:hover{
+  background-color: peru;
+}
+.card-4{
+  border: 2px solid indianred;
+}
+.card-4:hover{
+  background-color: indianred;
+}
+.card-5{
+  border: 2px solid plum;
+}
+.card-5:hover{
+  background-color: plum;
+}
+.card-6{
+  border: 2px solid teal;
+}
+.card-6:hover{
+  background-color: teal;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-img-left {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 2s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loaded .card {
+  opacity: 2;
+}

@@ -1,0 +1,211 @@
+/* Header Style Alteration for Home Page*/
+  .nav-bar {
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+ /*  .nav-bar .e-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+  } */
+
+  .nav-bar .log-in,
+  .nav-bar .new-account {
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .nav-bar .log-in:hover,
+  .nav-bar .new-account:hover {
+    background-color: #cc0000;
+  }
+  .nav-bar .new-account {
+    border: 1px solid white;
+  }
+  
+  .me-nu {
+    display: flex;
+  }
+  
+  .me-nu-icon {
+    display: none;
+  }
+
+  @media only screen and (max-width: 388px) and (min-width: 150px) {
+    .me-nu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+    }
+    .me-nu-icon {
+      display: block;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .me-nu-icon.active + .me-nu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* Below are the styles for LOGIN Modal */
+/* Customize the input fields */
+.ReactModal__Content input[type="text"],
+.ReactModal__Content input[type="email"],
+.ReactModal__Content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ReactModal__Content input[type="text"]:focus,
+.ReactModal__Content input[type="email"]:focus,
+.ReactModal__Content input[type="password"]:focus {
+  outline: none;
+  border: 2px solid #0069d9;
+}
+.ReactModal__Content input::placeholder {
+  font-style: italic;
+}
+
+.ReactModal__Content label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ReactModal__Content h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.ReactModal__Content #closeButton {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 0.5;
+  font-size: medium;
+  position: absolute;
+  top: 10px; 
+  right: 0px; 
+  padding: 10px;
+  font-size: 1.5em;
+  color: darkslategrey;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.ReactModal__Content #closeButton:hover {
+  background-color: rgba(255, 0, 0, 0.815);
+  color: whitesmoke;
+}
+
+.ReactModal__Content .buttonAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ReactModal__Content .buttonContainer .facebookButton {
+  background-color: transparent;
+  color: #4267B2;
+  border: 2px solid #4267B2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.ReactModal__Content .buttonContainer .facebookButton:hover{
+  background-color: #4267B2;
+  color: white;
+
+}
+
+/* .ReactModal__Content .buttonContainer .googleButton {
+  background-color: transparent;
+  color:#DB4437;
+  border: 2px solid  #DB4437;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.ReactModal__Content .buttonContainer .googleButton:hover {
+  background-color: #DB4437;
+  color: white;
+} */
+
+
+/* Below are the styles for Create Account Modal */
+
+
+.ReactModal__Content .ProceedButton {
+  background-color: transparent;
+  color: #55b242;
+  border: 2px solid #55b242;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.ReactModal__Content .ProceedButton:hover{
+  background-color: #55b242;
+  color: white;
+
+}
+
+.ReactModal__Content .buttonContainer .CancelButton {
+  background-color: transparent;
+  color:#DB4437;
+  border: 2px solid  #DB4437;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.ReactModal__Content .buttonContainer .CancelButton:hover {
+  background-color: #DB4437;
+  color: white;
+}
+
+#parent {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#parent::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+
+
